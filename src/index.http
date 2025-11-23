@@ -1,1 +1,16 @@
-http://localhost:8787/
+@baseURL=http://localhost:8787
+### Root
+{{baseURL}}
+
+### SignUp
+POST {{baseURL}}/api/auth/sign-up/email HTTP/1.1
+Content-Type: application/json
+
+{"name":"Dheeraj S.","email":"dheerajstvpm@gmail.com","password":"password123"}
+
+### Login
+POST {{baseURL}}/api/auth/sign-in/email HTTP/1.1
+Host: localhost
+Content-Type: application/json
+
+{"email":"dheerajstvpm@gmail.com","password":"password123"}
