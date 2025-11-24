@@ -7,7 +7,8 @@
     "cf-typegen": "wrangler types --env-interface CloudflareBindings",
     "db:generate:migration": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
-    "db:studio": "drizzle-kit studio"
+    "db:studio": "drizzle-kit studio",
+    "open-auth-docs": "start http://localhost:8787/api/auth/reference"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",
